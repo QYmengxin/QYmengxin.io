@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border: solid 3px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td {
+            border: solid 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>图片</h1>
+    <h5>本地</h5>
+    <img height="300" width="400" src="/static/images/mountain.jpg" alt="山">
+    <h5>远程</h5>
+    <img src="https://ts2.cn.mm.bing.net/th?id=OIP-C.xltrWUlXgs1H0kmsOzUnPwHaKX&w=211&h=295&c=8&rs=1&qlt=90&o=6&dpr=1.7&pid=3.1&rm=2"
+        alt="星游记">
+    <h1>超链接</h1>
+    <a href="https://www.acwing.com">远程网页</a>
+    <br>
+    <a href="/xuexiting-work1.html#index">本地网页</a>
+    <h1>列表</h1>
+    <ol>
+        <li>c语言</li>
+        <li>c++</li>
+        <li>java</li>
+    </ol>
+    <ul>
+        <li>快排</li>
+        <li>归并排序</li>
+        <li>桶排序</li>
+    </ul>
+
+    <ol>
+        <li>第一讲</li>
+        <li>第二讲
+            <ul>
+                <li>第一小节</li>
+                <li>第二小节</li>
+                <li>第三小节</li>
+            </ul>
+        </li>
+        <li>第三讲
+            <ol>
+                <li>第一小节</li>
+                <li>第二小节</li>
+                <li>第三小节</li>
+            </ol>
+        </li>
+    </ol>
+
+    <h1>表格</h1>
+    <table>
+        <caption>成绩单</caption>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>数学</th>
+                <th>语文</th>
+                <th>英语</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alice</td>
+                <td>100</td>
+                <td>99</td>
+                <td>98</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>99</td>
+                <td>98</td>
+                <td>97</td>
+            </tr>
+            <tr>
+                <td>Tom</td>
+                <td>98</td>
+                <td>97</td>
+                <td>96</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <th colspan="3">2022</th>
+        </tr>
+        <tr>
+            <td>abcdefg</td>
+            <td>abcdefg</td>
+            <td>abcdefg</td>
+        </tr>
+        <tr>
+            <th rowspan="2" colspan="2">FISTA</th>
+            <td>abcdefg</td>
+        </tr>
+        <tr>
+            <td>abcdefg</td>
+        </tr>
+        <tr>
+            <td>abcdefg</td>
+            <td>abcdefg</td>
+            <td>abcdefg</td>
+        </tr>
+    </table>
+    <h1>表单</h1>
+    <form action="/about.html">
+        <label for="username">用户名</label>
+        <input placeholder="用户名" required minlength="4" type="text" maxlength="10" name="username" id="username">
+        <br>
+        <label for="age">年龄</label>
+        <input type="number" name="age" id="age">
+        <br>
+        <label for="emial">邮箱</label>
+        <input type="emial" name="emial" id="emial">
+
+        <br>
+        <label for="password">密码</label>
+        <input type="password" name="password" id="password">
+
+        <br>
+        <label for="cpp">cpp</label>
+        <input type="radio" name="lang" value="cpp" id="cpp">
+
+        <br>
+        <label for="java">java</label>
+        <input type="radio" name="lang" value="java" id="java">
+
+        <br>
+        <label for="python">python</label>
+        <input type="radio" name="lang" value="python" id="python">
+
+        <br>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <br>
+        <label for="lan">语言</label>
+        <select name="lan" id="lan">
+            <option select value="">请选择</option>
+            <option value="Cpp">cpp</option>
+            <option value="java">java</option>
+            <option value="python">python</option>
+        </select>
+
+        <br>
+        <button type="submit">提交</button>
+    </form>
+</body>
+
+</html>
